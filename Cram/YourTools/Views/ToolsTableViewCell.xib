@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="toolsTableViewIdentifier" rowHeight="144" id="KGk-i7-Jjw" customClass="ToolsTableViewCell" customModule="Cram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="143.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzW-xd-NJC">
+                        <rect key="frame" x="68" y="28" width="46.5" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSK-Vr-zFW">
+                        <rect key="frame" x="68" y="66" width="321" height="55"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Tool_Scanner" translatesAutoresizingMaskIntoConstraints="NO" id="IFb-63-n96">
+                        <rect key="frame" x="33" y="35" width="15" height="15"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="IFb-63-n96" firstAttribute="centerY" secondItem="DzW-xd-NJC" secondAttribute="centerY" id="3Gu-AT-JVr"/>
+                    <constraint firstItem="DzW-xd-NJC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AAP-ir-BGB"/>
+                    <constraint firstItem="IFb-63-n96" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="DTQ-kG-8WT"/>
+                    <constraint firstItem="DzW-xd-NJC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="KSw-xX-dm1"/>
+                    <constraint firstItem="DzW-xd-NJC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="60" id="MXS-B6-M7b"/>
+                    <constraint firstItem="aSK-Vr-zFW" firstAttribute="leading" secondItem="DzW-xd-NJC" secondAttribute="leading" id="Mq6-cd-4OQ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aSK-Vr-zFW" secondAttribute="bottom" constant="14.5" id="VZ8-dc-jcn"/>
+                    <constraint firstItem="aSK-Vr-zFW" firstAttribute="top" secondItem="DzW-xd-NJC" secondAttribute="bottom" constant="8" id="cif-D9-CE6"/>
+                    <constraint firstItem="aSK-Vr-zFW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="mDc-lb-z3S"/>
+                    <constraint firstItem="IFb-63-n96" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="mzI-CI-a6a"/>
+                    <constraint firstItem="aSK-Vr-zFW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-30" id="wMI-U1-1ns"/>
+                    <constraint firstItem="DzW-xd-NJC" firstAttribute="leading" secondItem="IFb-63-n96" secondAttribute="trailing" constant="20" id="z9u-6k-w0y"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="DTQ-kG-8WT"/>
+                        <exclude reference="mzI-CI-a6a"/>
+                        <exclude reference="AAP-ir-BGB"/>
+                        <exclude reference="mDc-lb-z3S"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="titleView" destination="DzW-xd-NJC" id="LrU-L9-Hvb"/>
+                <outlet property="toolDescriotionLabel" destination="aSK-Vr-zFW" id="wZe-tk-Mt8"/>
+                <outlet property="toolIcon" destination="IFb-63-n96" id="egN-4R-BWK"/>
+            </connections>
+            <point key="canvasLocation" x="222.5" y="384"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_Tool_Scanner" width="15" height="15"/>
+    </resources>
+</document>

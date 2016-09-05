@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		470761521D66A7F400C628D8 /* QRViewStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470761511D66A7F400C628D8 /* QRViewStoryBoard.storyboard */; };
+		470761541D66A82B00C628D8 /* CramQRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470761531D66A82B00C628D8 /* CramQRScannerViewController.swift */; };
+		470761621D66B2CB00C628D8 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470761591D66B2CB00C628D8 /* QRCodeReader.swift */; };
+		470761631D66B2CB00C628D8 /* QRCodeReaderResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707615A1D66B2CB00C628D8 /* QRCodeReaderResult.swift */; };
+		470761641D66B2CB00C628D8 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707615B1D66B2CB00C628D8 /* QRCodeViewController.swift */; };
+		470761651D66B2CB00C628D8 /* QRCodeViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707615C1D66B2CB00C628D8 /* QRCodeViewControllerBuilder.swift */; };
+		470761661D66B2CB00C628D8 /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707615D1D66B2CB00C628D8 /* ReaderOverlayView.swift */; };
+		470761671D66B2CB00C628D8 /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707615E1D66B2CB00C628D8 /* SwitchCameraButton.swift */; };
+		470761681D66B2CB00C628D8 /* ToggleTorchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707615F1D66B2CB00C628D8 /* ToggleTorchButton.swift */; };
+		471DB7391D7D912D00041BF5 /* CramTableViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471DB7381D7D912D00041BF5 /* CramTableViewDelegateProxy.swift */; };
+		473847081D64123400B3D066 /* ToolsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473847071D64123400B3D066 /* ToolsMainViewController.swift */; };
+		4738470C1D6412B900B3D066 /* RAMCramAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4738470B1D6412B900B3D066 /* RAMCramAnimation.swift */; };
+		4738470F1D64185200B3D066 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4738470E1D64185200B3D066 /* BaseViewController.swift */; };
+		473847131D64195800B3D066 /* ToolsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473847111D64195800B3D066 /* ToolsTableViewCell.swift */; };
+		473847141D64195800B3D066 /* ToolsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473847121D64195800B3D066 /* ToolsTableViewCell.xib */; };
+		473847181D642E4A00B3D066 /* MyToolList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 473847171D642E4A00B3D066 /* MyToolList.plist */; };
+		4738471A1D64335900B3D066 /* ToolProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473847191D64335900B3D066 /* ToolProvider.swift */; };
+		473847221D64357900B3D066 /* NSArray+LinqExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4738471F1D64357900B3D066 /* NSArray+LinqExtensions.m */; };
+		473847231D64357900B3D066 /* NSDictionary+LinqExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 473847211D64357900B3D066 /* NSDictionary+LinqExtensions.m */; };
+		473847261D646A3000B3D066 /* ToolItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473847251D646A3000B3D066 /* ToolItemViewModel.swift */; };
+		473847281D646F9900B3D066 /* MainToolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473847271D646F9900B3D066 /* MainToolViewModel.swift */; };
+		4738472A1D64786000B3D066 /* BaseCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473847291D64786000B3D066 /* BaseCommons.swift */; };
+		4738472C1D64846200B3D066 /* CustomOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4738472B1D64846200B3D066 /* CustomOperators.swift */; };
+		474A87A21D6E94D700094ACE /* CramNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474A87A11D6E94D700094ACE /* CramNavigator.swift */; };
+		474DC4EF1D6DE6C400C6F57A /* RecordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DC4EE1D6DE6C400C6F57A /* RecordDetailViewController.swift */; };
+		474E0B451D6FF09200C38471 /* TestMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474E0B431D6FF09200C38471 /* TestMainViewController.swift */; };
+		474E0B461D6FF09200C38471 /* TestMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474E0B441D6FF09200C38471 /* TestMainViewController.xib */; };
+		475638021D640300000A99B8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475638011D640300000A99B8 /* MainViewController.swift */; };
+		477A75531D63328200F60DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A75521D63328200F60DB8 /* AppDelegate.swift */; };
+		477A75581D63328200F60DB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477A75561D63328200F60DB8 /* Main.storyboard */; };
+		477A755B1D63328200F60DB8 /* Cram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 477A75591D63328200F60DB8 /* Cram.xcdatamodeld */; };
+		477A755D1D63328200F60DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 477A755C1D63328200F60DB8 /* Assets.xcassets */; };
+		477A75601D63328200F60DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477A755E1D63328200F60DB8 /* LaunchScreen.storyboard */; };
+		477C3DE21D6727AA00A56E0C /* MainRecordCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477C3DE11D6727AA00A56E0C /* MainRecordCollectionViewController.swift */; };
+		477C3DEA1D672F2100A56E0C /* MainRecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477C3DE81D672F2100A56E0C /* MainRecordCell.swift */; };
+		477C3DEB1D672F2100A56E0C /* MainRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477C3DE91D672F2100A56E0C /* MainRecordCell.xib */; };
+		477C3DF51D67318700A56E0C /* CarouseLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 477C3DEE1D67318700A56E0C /* CarouseLayoutHelper.m */; };
+		477C3DF61D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 477C3DF11D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m */; };
+		477C3DF71D67318700A56E0C /* PBDCarouselCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 477C3DF41D67318700A56E0C /* PBDCarouselCollectionViewLayout.m */; };
+		B5DBE99EEACDEC5419122C97 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B115DB34208C2D919536C9E5 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		470761511D66A7F400C628D8 /* QRViewStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = QRViewStoryBoard.storyboard; path = YourTools/ConfigurableTools/QRScanner/View/QRViewStoryBoard.storyboard; sourceTree = "<group>"; };
+		470761531D66A82B00C628D8 /* CramQRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CramQRScannerViewController.swift; path = YourTools/ConfigurableTools/QRScanner/Controllers/CramQRScannerViewController.swift; sourceTree = "<group>"; };
+		470761591D66B2CB00C628D8 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		4707615A1D66B2CB00C628D8 /* QRCodeReaderResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReaderResult.swift; sourceTree = "<group>"; };
+		4707615B1D66B2CB00C628D8 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		4707615C1D66B2CB00C628D8 /* QRCodeViewControllerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewControllerBuilder.swift; sourceTree = "<group>"; };
+		4707615D1D66B2CB00C628D8 /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		4707615E1D66B2CB00C628D8 /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		4707615F1D66B2CB00C628D8 /* ToggleTorchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleTorchButton.swift; sourceTree = "<group>"; };
+		471DB7381D7D912D00041BF5 /* CramTableViewDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CramTableViewDelegateProxy.swift; path = Bases/CramTableViewDelegateProxy.swift; sourceTree = "<group>"; };
+		473847071D64123400B3D066 /* ToolsMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolsMainViewController.swift; path = YourTools/Controllers/ToolsMainViewController.swift; sourceTree = "<group>"; };
+		4738470B1D6412B900B3D066 /* RAMCramAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RAMCramAnimation.swift; path = FantacyDishes/RAMCustom/RAMCramAnimation.swift; sourceTree = "<group>"; };
+		4738470E1D64185200B3D066 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Bases/BaseViewController.swift; sourceTree = "<group>"; };
+		473847111D64195800B3D066 /* ToolsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolsTableViewCell.swift; path = YourTools/Views/ToolsTableViewCell.swift; sourceTree = "<group>"; };
+		473847121D64195800B3D066 /* ToolsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToolsTableViewCell.xib; path = YourTools/Views/ToolsTableViewCell.xib; sourceTree = "<group>"; };
+		473847171D642E4A00B3D066 /* MyToolList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MyToolList.plist; path = DataKitchen/YourTools/MyToolList.plist; sourceTree = "<group>"; };
+		473847191D64335900B3D066 /* ToolProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolProvider.swift; path = DataKitchen/YourTools/ToolProvider.swift; sourceTree = "<group>"; };
+		4738471C1D64357800B3D066 /* Cram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cram-Bridging-Header.h"; sourceTree = "<group>"; };
+		4738471D1D64357900B3D066 /* LinqToObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LinqToObjectiveC.h; path = FantacyDishes/Linq/LinqToObjectiveC.h; sourceTree = "<group>"; };
+		4738471E1D64357900B3D066 /* NSArray+LinqExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+LinqExtensions.h"; path = "FantacyDishes/Linq/NSArray+LinqExtensions.h"; sourceTree = "<group>"; };
+		4738471F1D64357900B3D066 /* NSArray+LinqExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+LinqExtensions.m"; path = "FantacyDishes/Linq/NSArray+LinqExtensions.m"; sourceTree = "<group>"; };
+		473847201D64357900B3D066 /* NSDictionary+LinqExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+LinqExtensions.h"; path = "FantacyDishes/Linq/NSDictionary+LinqExtensions.h"; sourceTree = "<group>"; };
+		473847211D64357900B3D066 /* NSDictionary+LinqExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+LinqExtensions.m"; path = "FantacyDishes/Linq/NSDictionary+LinqExtensions.m"; sourceTree = "<group>"; };
+		473847251D646A3000B3D066 /* ToolItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ToolItemViewModel.swift; path = YourTools/ViewModels/ToolItemViewModel.swift; sourceTree = "<group>"; };
+		473847271D646F9900B3D066 /* MainToolViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainToolViewModel.swift; path = YourTools/ViewModels/MainToolViewModel.swift; sourceTree = "<group>"; };
+		473847291D64786000B3D066 /* BaseCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseCommons.swift; path = Bases/BaseCommons.swift; sourceTree = "<group>"; };
+		4738472B1D64846200B3D066 /* CustomOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomOperators.swift; path = Bases/CustomOperators.swift; sourceTree = "<group>"; };
+		474A87A11D6E94D700094ACE /* CramNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CramNavigator.swift; path = Bases/CramNavigator.swift; sourceTree = "<group>"; };
+		474DC4EE1D6DE6C400C6F57A /* RecordDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecordDetailViewController.swift; path = RecordDetail/ViewControllers/RecordDetailViewController.swift; sourceTree = "<group>"; };
+		474E0B431D6FF09200C38471 /* TestMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestMainViewController.swift; path = Main/Controllers/TestMainViewController.swift; sourceTree = "<group>"; };
+		474E0B441D6FF09200C38471 /* TestMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TestMainViewController.xib; path = Main/Controllers/TestMainViewController.xib; sourceTree = "<group>"; };
+		475638011D640300000A99B8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Main/Controllers/MainViewController.swift; sourceTree = "<group>"; };
+		477A754F1D63328200F60DB8 /* Cram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		477A75521D63328200F60DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		477A75571D63328200F60DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		477A755A1D63328200F60DB8 /* Cram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cram.xcdatamodel; sourceTree = "<group>"; };
+		477A755C1D63328200F60DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		477A755F1D63328200F60DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		477A75611D63328200F60DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		477C3DE11D6727AA00A56E0C /* MainRecordCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainRecordCollectionViewController.swift; path = Main/Controllers/MainRecordCollectionViewController.swift; sourceTree = "<group>"; };
+		477C3DE81D672F2100A56E0C /* MainRecordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainRecordCell.swift; path = Main/Views/MainRecordCell.swift; sourceTree = "<group>"; };
+		477C3DE91D672F2100A56E0C /* MainRecordCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainRecordCell.xib; path = Main/Views/MainRecordCell.xib; sourceTree = "<group>"; };
+		477C3DED1D67318700A56E0C /* CarouseLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouseLayoutHelper.h; sourceTree = "<group>"; };
+		477C3DEE1D67318700A56E0C /* CarouseLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouseLayoutHelper.m; sourceTree = "<group>"; };
+		477C3DF01D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h; sourceTree = "<group>"; };
+		477C3DF11D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m; sourceTree = "<group>"; };
+		477C3DF21D67318700A56E0C /* PBDCarouselCollectionViewLayoutPropertiesCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBDCarouselCollectionViewLayoutPropertiesCache.h; sourceTree = "<group>"; };
+		477C3DF31D67318700A56E0C /* PBDCarouselCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBDCarouselCollectionViewLayout.h; sourceTree = "<group>"; };
+		477C3DF41D67318700A56E0C /* PBDCarouselCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PBDCarouselCollectionViewLayout.m; sourceTree = "<group>"; };
+		65F756B3FDFBB7461F62C1FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B115DB34208C2D919536C9E5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA244DBD4767BDEE5823C263 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		477A754C1D63328200F60DB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5DBE99EEACDEC5419122C97 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4707614C1D66A74A00C628D8 /* ConfigurableTools */ = {
+			isa = PBXGroup;
+			children = (
+				4707614D1D66A77F00C628D8 /* QRScanner */,
+			);
+			name = ConfigurableTools;
+			sourceTree = "<group>";
+		};
+		4707614D1D66A77F00C628D8 /* QRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				470761501D66A7B400C628D8 /* Controller */,
+				4707614F1D66A7AD00C628D8 /* ViewModel */,
+				4707614E1D66A7A400C628D8 /* View */,
+			);
+			name = QRScanner;
+			sourceTree = "<group>";
+		};
+		4707614E1D66A7A400C628D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				470761511D66A7F400C628D8 /* QRViewStoryBoard.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4707614F1D66A7AD00C628D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		470761501D66A7B400C628D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				470761531D66A82B00C628D8 /* CramQRScannerViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		470761561D66B2CB00C628D8 /* QRCodeReader.swift */ = {
+			isa = PBXGroup;
+			children = (
+				470761581D66B2CB00C628D8 /* QRCodeReader */,
+			);
+			name = QRCodeReader.swift;
+			path = FantacyDishes/QRCodeReader.swift;
+			sourceTree = "<group>";
+		};
+		470761581D66B2CB00C628D8 /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				470761591D66B2CB00C628D8 /* QRCodeReader.swift */,
+				4707615A1D66B2CB00C628D8 /* QRCodeReaderResult.swift */,
+				4707615B1D66B2CB00C628D8 /* QRCodeViewController.swift */,
+				4707615C1D66B2CB00C628D8 /* QRCodeViewControllerBuilder.swift */,
+				4707615D1D66B2CB00C628D8 /* ReaderOverlayView.swift */,
+				4707615E1D66B2CB00C628D8 /* SwitchCameraButton.swift */,
+				4707615F1D66B2CB00C628D8 /* ToggleTorchButton.swift */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
+		473847051D6411E600B3D066 /* YourTools */ = {
+			isa = PBXGroup;
+			children = (
+				4707614C1D66A74A00C628D8 /* ConfigurableTools */,
+				473847241D646A0600B3D066 /* ViewModels */,
+				473847101D64191200B3D066 /* Views */,
+				473847061D64120600B3D066 /* Controllers */,
+			);
+			name = YourTools;
+			sourceTree = "<group>";
+		};
+		473847061D64120600B3D066 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				473847071D64123400B3D066 /* ToolsMainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		473847091D64126800B3D066 /* FantacyDishes */ = {
+			isa = PBXGroup;
+			children = (
+				477C3DEC1D67318700A56E0C /* CarouselLayout */,
+				470761561D66B2CB00C628D8 /* QRCodeReader.swift */,
+				4738471B1D6434E600B3D066 /* Linq */,
+				4738470A1D64127E00B3D066 /* RAMCustom */,
+			);
+			name = FantacyDishes;
+			sourceTree = "<group>";
+		};
+		4738470A1D64127E00B3D066 /* RAMCustom */ = {
+			isa = PBXGroup;
+			children = (
+				4738470B1D6412B900B3D066 /* RAMCramAnimation.swift */,
+			);
+			name = RAMCustom;
+			sourceTree = "<group>";
+		};
+		4738470D1D64182D00B3D066 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				4738472B1D64846200B3D066 /* CustomOperators.swift */,
+				4738470E1D64185200B3D066 /* BaseViewController.swift */,
+				473847291D64786000B3D066 /* BaseCommons.swift */,
+				474A87A11D6E94D700094ACE /* CramNavigator.swift */,
+				471DB7381D7D912D00041BF5 /* CramTableViewDelegateProxy.swift */,
+			);
+			name = Bases;
+			sourceTree = "<group>";
+		};
+		473847101D64191200B3D066 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				473847111D64195800B3D066 /* ToolsTableViewCell.swift */,
+				473847121D64195800B3D066 /* ToolsTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		473847151D642DFC00B3D066 /* DataKitchen */ = {
+			isa = PBXGroup;
+			children = (
+				473847161D642E1200B3D066 /* YourTools */,
+			);
+			name = DataKitchen;
+			sourceTree = "<group>";
+		};
+		473847161D642E1200B3D066 /* YourTools */ = {
+			isa = PBXGroup;
+			children = (
+				473847171D642E4A00B3D066 /* MyToolList.plist */,
+				473847191D64335900B3D066 /* ToolProvider.swift */,
+			);
+			name = YourTools;
+			sourceTree = "<group>";
+		};
+		4738471B1D6434E600B3D066 /* Linq */ = {
+			isa = PBXGroup;
+			children = (
+				4738471D1D64357900B3D066 /* LinqToObjectiveC.h */,
+				4738471E1D64357900B3D066 /* NSArray+LinqExtensions.h */,
+				4738471F1D64357900B3D066 /* NSArray+LinqExtensions.m */,
+				473847201D64357900B3D066 /* NSDictionary+LinqExtensions.h */,
+				473847211D64357900B3D066 /* NSDictionary+LinqExtensions.m */,
+			);
+			name = Linq;
+			sourceTree = "<group>";
+		};
+		473847241D646A0600B3D066 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				473847251D646A3000B3D066 /* ToolItemViewModel.swift */,
+				473847271D646F9900B3D066 /* MainToolViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		474DC4EC1D6DE68B00C6F57A /* RecordDetail */ = {
+			isa = PBXGroup;
+			children = (
+				474DC4ED1D6DE69E00C6F57A /* ViewControllers */,
+			);
+			name = RecordDetail;
+			sourceTree = "<group>";
+		};
+		474DC4ED1D6DE69E00C6F57A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				474DC4EE1D6DE6C400C6F57A /* RecordDetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		475637FF1D6402CE000A99B8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				477C3DE31D6727CA00A56E0C /* Views */,
+				475638001D6402EE000A99B8 /* Controllers */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		475638001D6402EE000A99B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				475638011D640300000A99B8 /* MainViewController.swift */,
+				477C3DE11D6727AA00A56E0C /* MainRecordCollectionViewController.swift */,
+				474E0B431D6FF09200C38471 /* TestMainViewController.swift */,
+				474E0B441D6FF09200C38471 /* TestMainViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		477A75461D63328200F60DB8 = {
+			isa = PBXGroup;
+			children = (
+				477A75511D63328200F60DB8 /* Cram */,
+				477A75501D63328200F60DB8 /* Products */,
+				BFACB008AEF4093CD663C1EA /* Pods */,
+				4FFD775B7F3EAF54CA1A4D77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		477A75501D63328200F60DB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				477A754F1D63328200F60DB8 /* Cram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		477A75511D63328200F60DB8 /* Cram */ = {
+			isa = PBXGroup;
+			children = (
+				474DC4EC1D6DE68B00C6F57A /* RecordDetail */,
+				4738471C1D64357800B3D066 /* Cram-Bridging-Header.h */,
+				473847151D642DFC00B3D066 /* DataKitchen */,
+				4738470D1D64182D00B3D066 /* Bases */,
+				473847091D64126800B3D066 /* FantacyDishes */,
+				473847051D6411E600B3D066 /* YourTools */,
+				475637FF1D6402CE000A99B8 /* Main */,
+				477A75521D63328200F60DB8 /* AppDelegate.swift */,
+				477A75561D63328200F60DB8 /* Main.storyboard */,
+				477A755C1D63328200F60DB8 /* Assets.xcassets */,
+				477A755E1D63328200F60DB8 /* LaunchScreen.storyboard */,
+				477A75611D63328200F60DB8 /* Info.plist */,
+				477A75591D63328200F60DB8 /* Cram.xcdatamodeld */,
+			);
+			path = Cram;
+			sourceTree = "<group>";
+		};
+		477C3DE31D6727CA00A56E0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				477C3DE81D672F2100A56E0C /* MainRecordCell.swift */,
+				477C3DE91D672F2100A56E0C /* MainRecordCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		477C3DEC1D67318700A56E0C /* CarouselLayout */ = {
+			isa = PBXGroup;
+			children = (
+				477C3DED1D67318700A56E0C /* CarouseLayoutHelper.h */,
+				477C3DEE1D67318700A56E0C /* CarouseLayoutHelper.m */,
+				477C3DEF1D67318700A56E0C /* Internal */,
+				477C3DF31D67318700A56E0C /* PBDCarouselCollectionViewLayout.h */,
+				477C3DF41D67318700A56E0C /* PBDCarouselCollectionViewLayout.m */,
+			);
+			name = CarouselLayout;
+			path = FantacyDishes/CarouselLayout;
+			sourceTree = "<group>";
+		};
+		477C3DEF1D67318700A56E0C /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				477C3DF01D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.h */,
+				477C3DF11D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m */,
+				477C3DF21D67318700A56E0C /* PBDCarouselCollectionViewLayoutPropertiesCache.h */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		4FFD775B7F3EAF54CA1A4D77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B115DB34208C2D919536C9E5 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFACB008AEF4093CD663C1EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65F756B3FDFBB7461F62C1FD /* Pods.debug.xcconfig */,
+				CA244DBD4767BDEE5823C263 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		477A754E1D63328200F60DB8 /* Cram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477A75641D63328200F60DB8 /* Build configuration list for PBXNativeTarget "Cram" */;
+			buildPhases = (
+				347E38A6C94A8997D8D01CE5 /* Check Pods Manifest.lock */,
+				477A754B1D63328200F60DB8 /* Sources */,
+				477A754C1D63328200F60DB8 /* Frameworks */,
+				477A754D1D63328200F60DB8 /* Resources */,
+				75984CDE334F20E534C43F09 /* Embed Pods Frameworks */,
+				9A0BCD0971A3F9D4DA1D65DF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cram;
+			productName = Cram;
+			productReference = 477A754F1D63328200F60DB8 /* Cram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		477A75471D63328200F60DB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = MogoOrg;
+				TargetAttributes = {
+					477A754E1D63328200F60DB8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = BNL578XVTE;
+					};
+				};
+			};
+			buildConfigurationList = 477A754A1D63328200F60DB8 /* Build configuration list for PBXProject "Cram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 477A75461D63328200F60DB8;
+			productRefGroup = 477A75501D63328200F60DB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				477A754E1D63328200F60DB8 /* Cram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		477A754D1D63328200F60DB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477A75601D63328200F60DB8 /* LaunchScreen.storyboard in Resources */,
+				470761521D66A7F400C628D8 /* QRViewStoryBoard.storyboard in Resources */,
+				473847181D642E4A00B3D066 /* MyToolList.plist in Resources */,
+				477A755D1D63328200F60DB8 /* Assets.xcassets in Resources */,
+				477A75581D63328200F60DB8 /* Main.storyboard in Resources */,
+				473847141D64195800B3D066 /* ToolsTableViewCell.xib in Resources */,
+				477C3DEB1D672F2100A56E0C /* MainRecordCell.xib in Resources */,
+				474E0B461D6FF09200C38471 /* TestMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		347E38A6C94A8997D8D01CE5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75984CDE334F20E534C43F09 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A0BCD0971A3F9D4DA1D65DF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		477A754B1D63328200F60DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				474DC4EF1D6DE6C400C6F57A /* RecordDetailViewController.swift in Sources */,
+				477A75531D63328200F60DB8 /* AppDelegate.swift in Sources */,
+				477C3DF61D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m in Sources */,
+				470761671D66B2CB00C628D8 /* SwitchCameraButton.swift in Sources */,
+				477C3DF51D67318700A56E0C /* CarouseLayoutHelper.m in Sources */,
+				471DB7391D7D912D00041BF5 /* CramTableViewDelegateProxy.swift in Sources */,
+				473847081D64123400B3D066 /* ToolsMainViewController.swift in Sources */,
+				477A755B1D63328200F60DB8 /* Cram.xcdatamodeld in Sources */,
+				475638021D640300000A99B8 /* MainViewController.swift in Sources */,
+				4738472A1D64786000B3D066 /* BaseCommons.swift in Sources */,
+				470761651D66B2CB00C628D8 /* QRCodeViewControllerBuilder.swift in Sources */,
+				4738470C1D6412B900B3D066 /* RAMCramAnimation.swift in Sources */,
+				470761641D66B2CB00C628D8 /* QRCodeViewController.swift in Sources */,
+				4738472C1D64846200B3D066 /* CustomOperators.swift in Sources */,
+				470761681D66B2CB00C628D8 /* ToggleTorchButton.swift in Sources */,
+				470761631D66B2CB00C628D8 /* QRCodeReaderResult.swift in Sources */,
+				470761661D66B2CB00C628D8 /* ReaderOverlayView.swift in Sources */,
+				477C3DF71D67318700A56E0C /* PBDCarouselCollectionViewLayout.m in Sources */,
+				474E0B451D6FF09200C38471 /* TestMainViewController.swift in Sources */,
+				477C3DEA1D672F2100A56E0C /* MainRecordCell.swift in Sources */,
+				473847281D646F9900B3D066 /* MainToolViewModel.swift in Sources */,
+				473847131D64195800B3D066 /* ToolsTableViewCell.swift in Sources */,
+				4738471A1D64335900B3D066 /* ToolProvider.swift in Sources */,
+				470761541D66A82B00C628D8 /* CramQRScannerViewController.swift in Sources */,
+				474A87A21D6E94D700094ACE /* CramNavigator.swift in Sources */,
+				4738470F1D64185200B3D066 /* BaseViewController.swift in Sources */,
+				473847231D64357900B3D066 /* NSDictionary+LinqExtensions.m in Sources */,
+				473847221D64357900B3D066 /* NSArray+LinqExtensions.m in Sources */,
+				470761621D66B2CB00C628D8 /* QRCodeReader.swift in Sources */,
+				473847261D646A3000B3D066 /* ToolItemViewModel.swift in Sources */,
+				477C3DE21D6727AA00A56E0C /* MainRecordCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		477A75561D63328200F60DB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				477A75571D63328200F60DB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		477A755E1D63328200F60DB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				477A755F1D63328200F60DB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		477A75621D63328200F60DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		477A75631D63328200F60DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		477A75651D63328200F60DB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F756B3FDFBB7461F62C1FD /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Cram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elegance.cram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cram/Cram-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		477A75661D63328200F60DB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA244DBD4767BDEE5823C263 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Cram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.elegance.cram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cram/Cram-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		477A754A1D63328200F60DB8 /* Build configuration list for PBXProject "Cram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477A75621D63328200F60DB8 /* Debug */,
+				477A75631D63328200F60DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477A75641D63328200F60DB8 /* Build configuration list for PBXNativeTarget "Cram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477A75651D63328200F60DB8 /* Debug */,
+				477A75661D63328200F60DB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		477A75591D63328200F60DB8 /* Cram.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				477A755A1D63328200F60DB8 /* Cram.xcdatamodel */,
+			);
+			currentVersion = 477A755A1D63328200F60DB8 /* Cram.xcdatamodel */;
+			path = Cram.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 477A75471D63328200F60DB8 /* Project object */;
+}

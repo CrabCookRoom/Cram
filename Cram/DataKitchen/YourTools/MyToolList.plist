@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>toolInstalled</key>
+		<true/>
+		<key>toolIdentifier</key>
+		<string>showQRScannerIdentifier</string>
+		<key>toolName</key>
+		<string>QR Scanner</string>
+		<key>toolDescription</key>
+		<string>一款可以用来扫描二维码的小工具，扫描后可以直接跳转safari或者选择直接在应用内打开，向打开微信扫码后再点击safari跳转说再见啦</string>
+		<key>toolIcon</key>
+		<string>ic_Tool_Scanner</string>
+	</dict>
+	<dict>
+		<key>toolInstalled</key>
+		<false/>
+		<key>toolIdentifier</key>
+		<string>showPaletteIdentifier</string>
+		<key>toolName</key>
+		<string>Palette</string>
+		<key>toolDescription</key>
+		<string>调色板小工具，可以为UI各类控件进行直接配色，方便色盲色弱等看不清颜色的玩家进行配色，嗯</string>
+		<key>toolIcon</key>
+		<string>ic_Tool_Palette</string>
+	</dict>
+</array>
+</plist>
