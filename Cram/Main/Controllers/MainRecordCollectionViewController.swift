@@ -7,11 +7,16 @@
 //
 
 import UIKit
-import Bond
+import RxSwift
+import RxDataSources
 
 class MainRecordCollectionViewController: BaseViewController {
     
     let mainRecordCellIdentifier = "manRecordIdentifier"
+    
+    let mainViewModel = MainViewModel()
+    
+    let dailyDataSource = RxCollectionViewSectionedReloadDataSource<SectionModel<String, DailyCramViewModel>>()
     
     @IBOutlet weak var recordCollection: UICollectionView!
         {
@@ -32,25 +37,29 @@ class MainRecordCollectionViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let dataSource =  ObservableArray([ObservableArray(["1","2","3","4","5"])])
-        dataSource.bindTo(recordCollection) {[weak self] (indexPath, dataSource, collectionView) -> UICollectionViewCell in
+    }
+    
+    override func configViewModel() {
+        guard let dailyData = mainViewModel.dailyCramsViewModels else { return }
+        
+        dailyDataSource.configureCell = {
+            [weak self] _, collectionView, indexPath, dailyData in
+            
             guard let strongSelf = self else { return UICollectionViewCell() }
             
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier(strongSelf.mainRecordCellIdentifier, forIndexPath: indexPath) as! MainRecordCell
+            cell.tag = indexPath.row
+            cell.dailyViewModel = dailyData
             return cell
         }
-    }
-}
-
-extension MainRecordCollectionViewController : UICollectionViewDelegate
-{
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-
-//        let navigationMode = NavigationMode.Push({ (vc)  in } , true )
         
-//        CramNavigator.globalNavigator.navigateToVc(navigationMode, fromVc: self ,targetVc: TestMainViewController())
+        dailyData.asObservable().bindTo(recordCollection.rx_itemsWithDataSource(dailyDataSource))
+            .addDisposableTo(disposeBag)
         
-        CramNavigator.globalNavigator.navigateToIdentifier("showRecordDetailSegue", parameter: "harly")
+        recordCollection.rx_itemSelected.subscribeNext { (indexPath) in
+            CramNavigator.globalNavigator
+                .navigateToIdentifier("showRecordDetailSegue", parameter: "harly")
+        }.addDisposableTo(disposeBag)
     }
 }
 

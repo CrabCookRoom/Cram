@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import Async
+import RxSwift
 
 class CramQRScannerViewController: BaseViewController {
     
@@ -29,11 +30,11 @@ class CramQRScannerViewController: BaseViewController {
     }
     
     override func configUI() {
-        scanBtn.bnd_tap.observe { [weak self](_) in
+        scanBtn.rx_tap.subscribeNext { [weak self](_) in
             guard let strongSelf = self else { return }
             strongSelf.showQRScanner()
-        }
-        
+        }.addDisposableTo(disposeBag)
+
 //        loadingIndicator.bnd_animating <==> webResultView.bnd_alpha.map({ (alpha) -> Bool in
 //            return alpha != 1
 //        })
@@ -75,41 +76,41 @@ class CramQRScannerViewController: BaseViewController {
     
 }
 
-extension CramQRScannerViewController : UIWebViewDelegate
-{
-    func webViewDidStartLoad(webView: UIWebView) {
-        webView.bnd_alpha.next(0)
-    }
-    
-    func webViewDidFinishLoad(webView: UIWebView) {
-        UIView.animateWithDuration(0.3) { 
-            webView.bnd_alpha.next(1)
-        }
-        
-        guard scannedUrlString.containsString("pgyer") else { return }
-
-        let pswResult = webView.stringByEvaluatingJavaScriptFromString("document.getElementById('password' ).value = 123456")
-        
-        if let psw = pswResult
-        {
-            if psw == "123456"
-            {
-                webView.stringByEvaluatingJavaScriptFromString("saveData();")
-            }
-            else
-            {
-                Async.main(after: 0.3){
-                    webView.stringByEvaluatingJavaScriptFromString("install_loading ();")
-                    
-                        UIView.animateWithDuration(0.3, animations: {
-                            self.loadingLabel.alpha = 1
-                        })
-                }
-            }
-        }
-       
-    }
-}
+//extension CramQRScannerViewController : UIWebViewDelegate
+//{
+//    func webViewDidStartLoad(webView: UIWebView) {
+//        webView.bnd_alpha.next(0)
+//    }
+//    
+//    func webViewDidFinishLoad(webView: UIWebView) {
+//        UIView.animateWithDuration(0.3) { 
+//            webView.bnd_alpha.next(1)
+//        }
+//        
+//        guard scannedUrlString.containsString("pgyer") else { return }
+//
+//        let pswResult = webView.stringByEvaluatingJavaScriptFromString("document.getElementById('password' ).value = 123456")
+//        
+//        if let psw = pswResult
+//        {
+//            if psw == "123456"
+//            {
+//                webView.stringByEvaluatingJavaScriptFromString("saveData();")
+//            }
+//            else
+//            {
+//                Async.main(after: 0.3){
+//                    webView.stringByEvaluatingJavaScriptFromString("install_loading ();")
+//                    
+//                        UIView.animateWithDuration(0.3, animations: {
+//                            self.loadingLabel.alpha = 1
+//                        })
+//                }
+//            }
+//        }
+//       
+//    }
+//}
 
 extension CramQRScannerViewController : QRCodeReaderViewControllerDelegate
 {

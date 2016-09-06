@@ -7,15 +7,25 @@
 //
 
 import UIKit
-import Bond
 
 class MainViewController: BaseViewController {
 
-    var recordVc : MainRecordCollectionViewController?
-    
+    @IBOutlet weak var profileBtn: UIButton!
+    var recordVc : MainRecordCollectionViewController!
+    let mainViewModel = MainViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        let recordDetailVc = childViewControllers.filter({ (vc) -> Bool in
+//            return vc is MainRecordCollectionViewController
+//        }).first
+//
+//        if let record = recordDetailVc
+//        {
+//            recordVc = record as? MainRecordCollectionViewController
+//            recordVc.mainViewModel = mainViewModel
+//        }
+        
         CramNavigator.globalNavigator.registerNavigationPara("showRecordDetailSegue", sourceVc: self, callBack: { paramenter , destinationController in
         
             guard paramenter is String else { return }
@@ -28,10 +38,17 @@ class MainViewController: BaseViewController {
         } )
         
         
+        CramNavigator.globalNavigator.registerNavigationPara("showProfileSegue", sourceVc: self, callBack: { paramenter , destinationController in
+            
+        } )
+        
+        
     }
     
     override func configUI() {
-
+        profileBtn.rx_tap.subscribeNext {(_) in
+            CramNavigator.globalNavigator.navigateToIdentifier("showProfileSegue", parameter: "")
+        }.addDisposableTo(disposeBag)
     }
     
     override func configViewModel() {

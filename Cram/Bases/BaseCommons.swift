@@ -49,6 +49,10 @@ func generateVariableVMPara<T:Hashable>( modelPara : T? ) -> Variable<T> {
         {
             return Variable(false as! T)
         }
+        else if T.self == NSDate.self
+        {
+            return Variable(NSDate() as! T)
+        }
         else
         {
             //More types to added

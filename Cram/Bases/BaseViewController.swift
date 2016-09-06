@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Bond
+import RxSwift
 
 protocol ICramViewController {
     
@@ -18,16 +18,18 @@ protocol ICramViewController {
 
 class BaseViewController: UIViewController    {
 
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
 
         if let backBtn = cramBackBtn()
         {
-            backBtn.bnd_tap.observe({ [weak self](_) in
+            backBtn.rx_tap.subscribeNext{ [weak self] _ in
                 guard let strongSelf = self else { return }
                 strongSelf.navigationController?.popViewControllerAnimated(true)
-            })
+            }.addDisposableTo(disposeBag)
         }
         
         configUI()

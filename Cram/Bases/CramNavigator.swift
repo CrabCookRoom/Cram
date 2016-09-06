@@ -84,13 +84,26 @@ class CramNavigator : NSObject
                 return
             }
             
-            guard segue.destinationViewController is BaseViewController else
+            var baseVc : BaseViewController = BaseViewController()
+            if segue.destinationViewController is UINavigationController
             {
-                print("Identifier: " + identifier + " failed performed since the destination vc is not inherited from BaseVc")
-                return
+                let navVc = segue.destinationViewController as? UINavigationController
+                baseVc = navVc?.topViewController as! BaseViewController
+            }
+            else
+            {
+                if !(segue.destinationViewController is BaseViewController)
+                {
+                    print("Identifier: " + identifier + " failed performed since the destination vc is not inherited from BaseVc")
+                }
+                else
+                {
+                    baseVc = segue.destinationViewController as! BaseViewController
+                }
             }
             
-            let destVc = segue.destinationViewController as! BaseViewController
+            
+            let destVc = baseVc
             
             navigationPreparation(paraToPass: parameter, destinationVc: destVc)
         }

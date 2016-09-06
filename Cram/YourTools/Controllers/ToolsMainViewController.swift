@@ -15,7 +15,6 @@ class ToolsMainViewController: BaseViewController   {
     let cellIdentifier = "toolsTableViewIdentifier"
     
     let toolMainViewModel = MainToolViewModel()
-    let disposeBag = DisposeBag()
     
     @IBOutlet weak var toolsTableView: UITableView!
     let toolDataSource = RxTableViewSectionedReloadDataSource<SectionModel<String, ToolItemViewModel>>()

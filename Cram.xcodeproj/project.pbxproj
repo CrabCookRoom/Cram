@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4701029A1D7EA42C00616D75 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470102991D7EA42C00616D75 /* MainViewModel.swift */; };
+		4701029C1D7EA45200616D75 /* DailyCramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4701029B1D7EA45200616D75 /* DailyCramViewModel.swift */; };
+		4701029F1D7EA4DF00616D75 /* MyDailysList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4701029E1D7EA4DF00616D75 /* MyDailysList.plist */; };
+		470102A11D7EA65F00616D75 /* DailyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470102A01D7EA65F00616D75 /* DailyProvider.swift */; };
+		470102A71D7EB16E00616D75 /* CramProfileStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470102A61D7EB16E00616D75 /* CramProfileStoryBoard.storyboard */; };
+		470102A91D7EB42300616D75 /* CramProfileStepOneControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470102A81D7EB42300616D75 /* CramProfileStepOneControllerViewController.swift */; };
+		470102AB1D7EC39500616D75 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470102AA1D7EC39500616D75 /* ProfileViewModel.swift */; };
 		470761521D66A7F400C628D8 /* QRViewStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 470761511D66A7F400C628D8 /* QRViewStoryBoard.storyboard */; };
 		470761541D66A82B00C628D8 /* CramQRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470761531D66A82B00C628D8 /* CramQRScannerViewController.swift */; };
 		470761621D66B2CB00C628D8 /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470761591D66B2CB00C628D8 /* QRCodeReader.swift */; };
@@ -50,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		470102991D7EA42C00616D75 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewModel.swift; path = Main/ViewModels/MainViewModel.swift; sourceTree = "<group>"; };
+		4701029B1D7EA45200616D75 /* DailyCramViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyCramViewModel.swift; path = Main/ViewModels/DailyCramViewModel.swift; sourceTree = "<group>"; };
+		4701029E1D7EA4DF00616D75 /* MyDailysList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = MyDailysList.plist; path = DataKitchen/YourDailys/MyDailysList.plist; sourceTree = "<group>"; };
+		470102A01D7EA65F00616D75 /* DailyProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DailyProvider.swift; path = DataKitchen/YourDailys/DailyProvider.swift; sourceTree = "<group>"; };
+		470102A61D7EB16E00616D75 /* CramProfileStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CramProfileStoryBoard.storyboard; path = PersonalProfile/Views/CramProfileStoryBoard.storyboard; sourceTree = "<group>"; };
+		470102A81D7EB42300616D75 /* CramProfileStepOneControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CramProfileStepOneControllerViewController.swift; path = PersonalProfile/Controllers/CramProfileStepOneControllerViewController.swift; sourceTree = "<group>"; };
+		470102AA1D7EC39500616D75 /* ProfileViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewModel.swift; path = PersonalProfile/ViewModel/ProfileViewModel.swift; sourceTree = "<group>"; };
 		470761511D66A7F400C628D8 /* QRViewStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = QRViewStoryBoard.storyboard; path = YourTools/ConfigurableTools/QRScanner/View/QRViewStoryBoard.storyboard; sourceTree = "<group>"; };
 		470761531D66A82B00C628D8 /* CramQRScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CramQRScannerViewController.swift; path = YourTools/ConfigurableTools/QRScanner/Controllers/CramQRScannerViewController.swift; sourceTree = "<group>"; };
 		470761591D66B2CB00C628D8 /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
@@ -116,6 +130,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470102981D7EA40000616D75 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				470102991D7EA42C00616D75 /* MainViewModel.swift */,
+				4701029B1D7EA45200616D75 /* DailyCramViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		4701029D1D7EA4A200616D75 /* YourDailys */ = {
+			isa = PBXGroup;
+			children = (
+				4701029E1D7EA4DF00616D75 /* MyDailysList.plist */,
+				470102A01D7EA65F00616D75 /* DailyProvider.swift */,
+			);
+			name = YourDailys;
+			sourceTree = "<group>";
+		};
+		470102A21D7EB0D000616D75 /* PersonalProfile */ = {
+			isa = PBXGroup;
+			children = (
+				470102A51D7EB13300616D75 /* Views */,
+				470102A41D7EB12C00616D75 /* ViewModels */,
+				470102A31D7EB12600616D75 /* ViewControllers */,
+			);
+			name = PersonalProfile;
+			sourceTree = "<group>";
+		};
+		470102A31D7EB12600616D75 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				470102A81D7EB42300616D75 /* CramProfileStepOneControllerViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		470102A41D7EB12C00616D75 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				470102AA1D7EC39500616D75 /* ProfileViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		470102A51D7EB13300616D75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				470102A61D7EB16E00616D75 /* CramProfileStoryBoard.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		4707614C1D66A74A00C628D8 /* ConfigurableTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +308,7 @@
 		473847151D642DFC00B3D066 /* DataKitchen */ = {
 			isa = PBXGroup;
 			children = (
+				4701029D1D7EA4A200616D75 /* YourDailys */,
 				473847161D642E1200B3D066 /* YourTools */,
 			);
 			name = DataKitchen;
@@ -296,6 +363,7 @@
 		475637FF1D6402CE000A99B8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				470102981D7EA40000616D75 /* ViewModels */,
 				477C3DE31D6727CA00A56E0C /* Views */,
 				475638001D6402EE000A99B8 /* Controllers */,
 			);
@@ -334,6 +402,7 @@
 		477A75511D63328200F60DB8 /* Cram */ = {
 			isa = PBXGroup;
 			children = (
+				470102A21D7EB0D000616D75 /* PersonalProfile */,
 				474DC4EC1D6DE68B00C6F57A /* RecordDetail */,
 				4738471C1D64357800B3D066 /* Cram-Bridging-Header.h */,
 				473847151D642DFC00B3D066 /* DataKitchen */,
@@ -462,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4701029F1D7EA4DF00616D75 /* MyDailysList.plist in Resources */,
 				477A75601D63328200F60DB8 /* LaunchScreen.storyboard in Resources */,
 				470761521D66A7F400C628D8 /* QRViewStoryBoard.storyboard in Resources */,
 				473847181D642E4A00B3D066 /* MyToolList.plist in Resources */,
@@ -469,6 +539,7 @@
 				477A75581D63328200F60DB8 /* Main.storyboard in Resources */,
 				473847141D64195800B3D066 /* ToolsTableViewCell.xib in Resources */,
 				477C3DEB1D672F2100A56E0C /* MainRecordCell.xib in Resources */,
+				470102A71D7EB16E00616D75 /* CramProfileStoryBoard.storyboard in Resources */,
 				474E0B461D6FF09200C38471 /* TestMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,10 +603,13 @@
 				477A75531D63328200F60DB8 /* AppDelegate.swift in Sources */,
 				477C3DF61D67318700A56E0C /* PBDCarouselCollectionViewLayoutHorizontalPropertiesCache.m in Sources */,
 				470761671D66B2CB00C628D8 /* SwitchCameraButton.swift in Sources */,
+				470102A11D7EA65F00616D75 /* DailyProvider.swift in Sources */,
 				477C3DF51D67318700A56E0C /* CarouseLayoutHelper.m in Sources */,
+				4701029C1D7EA45200616D75 /* DailyCramViewModel.swift in Sources */,
 				471DB7391D7D912D00041BF5 /* CramTableViewDelegateProxy.swift in Sources */,
 				473847081D64123400B3D066 /* ToolsMainViewController.swift in Sources */,
 				477A755B1D63328200F60DB8 /* Cram.xcdatamodeld in Sources */,
+				470102A91D7EB42300616D75 /* CramProfileStepOneControllerViewController.swift in Sources */,
 				475638021D640300000A99B8 /* MainViewController.swift in Sources */,
 				4738472A1D64786000B3D066 /* BaseCommons.swift in Sources */,
 				470761651D66B2CB00C628D8 /* QRCodeViewControllerBuilder.swift in Sources */,
@@ -555,10 +629,12 @@
 				474A87A21D6E94D700094ACE /* CramNavigator.swift in Sources */,
 				4738470F1D64185200B3D066 /* BaseViewController.swift in Sources */,
 				473847231D64357900B3D066 /* NSDictionary+LinqExtensions.m in Sources */,
+				470102AB1D7EC39500616D75 /* ProfileViewModel.swift in Sources */,
 				473847221D64357900B3D066 /* NSArray+LinqExtensions.m in Sources */,
 				470761621D66B2CB00C628D8 /* QRCodeReader.swift in Sources */,
 				473847261D646A3000B3D066 /* ToolItemViewModel.swift in Sources */,
 				477C3DE21D6727AA00A56E0C /* MainRecordCollectionViewController.swift in Sources */,
+				4701029A1D7EA42C00616D75 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
